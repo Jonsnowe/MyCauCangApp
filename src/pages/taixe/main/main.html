@@ -1,0 +1,30 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar color="secondary">
+            <ion-title>Chức năng</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <!-- <button ion-item menuClose (click)="gotoPage(0)">
+                Vận đơn
+                <ion-icon name="icon-custom-truck" style="float:right;"></ion-icon>
+            </button>
+            <button ion-item menuClose (click)="gotoPage(1)">
+                Báo hư
+                <ion-icon name="icon-suachua" style="float:right;"></ion-icon>
+            </button>
+            <button ion-item menuClose (click)="gotoPage(2)">
+                Thống kê
+                <ion-icon name="icon-thongke" style="float:right;"></ion-icon>
+            </button> -->
+            <button ion-item menuClose (click)="logOut()">
+                Đăng xuất
+                <ion-icon ios="ios-exit" md="md-exit" style="float:right;"></ion-icon>
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage"></ion-nav>
+

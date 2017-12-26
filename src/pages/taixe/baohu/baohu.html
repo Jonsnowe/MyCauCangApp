@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Báo hư
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <div class="row">
+      <span class="col-xs-12 col-sm-12">Xe bị hỏng hóc? Nhấn vào hình bên dưới để thông báo sữa chữa ngay!!</span>
+    </div>
+    <div class="row">
+      <a (click)="baohu_confirm()">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-12 offset-1>
+              <img class="img-responsive" src="../assets/images/baosuachua.jpg" width="300px">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </a>
+    </div>
+  </div>
+</ion-content>

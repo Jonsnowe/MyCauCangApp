@@ -1,0 +1,21 @@
+<form [formGroup]="login" #form="ngForm" class="login_content">
+  <h1 ion-text>NEO logistic</h1>
+  <h1 ion-text>Transport and Maintenance</h1>
+  <img src="assets/images/Truck.png" width="350px">
+  <ion-item>    
+    <ion-input type="text" formControlName="email" placeholder="ID"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input formControlName="password" placeholder="Mật khẩu" type="password"></ion-input>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+          <button class="custom-button" col-6 ion-button type="submit" [disabled]="!login.valid" (click)="logIn_taixe(form.value)" >Tài xế</button>          
+      </ion-col>
+      <ion-col col-6>
+          <button class="custom-button" col-6 ion-button type="submit" [disabled]="!login.valid" (click)="logIn_tho(form.value)" >Thợ</button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</form>

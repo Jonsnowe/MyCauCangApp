@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Thống kê
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Loại thông kê</ion-label>
+    <ion-select [(ngModel)]="loai">
+        <ion-option value="0">Tất cả công đã chạy</ion-option>
+        <ion-option value="1">Đã xác nhận</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Tàu</ion-label>
+    <ion-select [(ngModel)]="tau">
+        <ion-option value="1">Pioneer</ion-option>
+        <ion-option value="2">F.Carrier</ion-option>
+        <ion-option value="3">diamond</ion-option>
+        <ion-option value="4">f.navigator</ion-option>
+        <ion-option value="5">frieghter</ion-option>
+        <ion-option value="6">xà lan</ion-option>
+        <ion-option value="7">vs. integrity</ion-option>
+        <ion-option value="8">vs. pacific</ion-option>
+        <ion-option value="9">vs. fortune</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Bắt đầu từ ngày</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" min="2017" max="2030" [(ngModel)]="batdau" cancelText="Đóng" doneText="Chọn"></ion-datetime>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Đến ngày</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY"  min="2017" max="2030" [(ngModel)]="ketthuc"  cancelText="Đóng" doneText="Chọn"></ion-datetime>
+    </ion-item>
+    <button class="custom-green" block ion-button type="submit">Xác nhận</button>
+
+</ion-content>

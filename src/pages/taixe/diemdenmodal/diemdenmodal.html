@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Điểm bắt đầu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Loại Địa Điểm</ion-label>
+    <ion-select [(ngModel)]="loaidiadiem">
+        <ion-option value="0">Tất cả công đã chạy</ion-option>
+        <ion-option value="1">Đã xác nhận</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Vị trí</ion-label>
+    <ion-select [(ngModel)]="vitri">
+        <ion-option value="0">Tất cả công đã chạy</ion-option>
+        <ion-option value="1">Đã xác nhận</ion-option>
+    </ion-select>
+  </ion-item>
+  <button class="custom-green" block ion-button (click)="xacnhan()" ion-text>Xác nhận</button>  
+</ion-content>
